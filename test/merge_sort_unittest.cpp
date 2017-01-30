@@ -5,7 +5,7 @@ bool ArraysMatch (int *A, int *B, int size){
 	bool returnBool = true;
 	for (int k = 0; k < size; k++){
 	  if (A[k] != B[k]){
-	  	std::cout << " DONT WORK AT POSITION: " << k << "EXPECTED "<< A[k] << " GOT " << B[k] << std::endl;
+	  	std::cout << " DONT WORK AT " << k << "cxc" << A[k] << " eewf" << B[k] << std::endl;
 	  	returnBool = false;
 	  }
 	}

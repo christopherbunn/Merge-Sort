@@ -1,18 +1,18 @@
-Start testing: Jan 25 01:24 EST
+Start testing: Jan 29 20:36 EST
 ----------------------------------------------------------
 1/4 Testing: Backwards
 1/4 Test: Backwards
 Command: "/usr/bin/COMMAND" "runUnitTests"
 Directory: /Users/chris/Merge-Sort/build
-"Backwards" start time: Jan 25 01:24 EST
+"Backwards" start time: Jan 29 20:36 EST
 Output:
 ----------------------------------------------------------
 /usr/bin/COMMAND: line 4: runUnitTests: command not found
 <end of output>
-Test time =   0.05 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Failed.
-"Backwards" end time: Jan 25 01:24 EST
+"Backwards" end time: Jan 29 20:36 EST
 "Backwards" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -20,7 +20,7 @@ Test Failed.
 2/4 Test: JustZero
 Command: "/usr/bin/COMMAND" "runUnitTests"
 Directory: /Users/chris/Merge-Sort/build
-"JustZero" start time: Jan 25 01:24 EST
+"JustZero" start time: Jan 29 20:36 EST
 Output:
 ----------------------------------------------------------
 /usr/bin/COMMAND: line 4: runUnitTests: command not found
@@ -28,7 +28,7 @@ Output:
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Failed.
-"JustZero" end time: Jan 25 01:24 EST
+"JustZero" end time: Jan 29 20:36 EST
 "JustZero" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -36,7 +36,7 @@ Test Failed.
 3/4 Test: AllEights
 Command: "/usr/bin/COMMAND" "runUnitTests"
 Directory: /Users/chris/Merge-Sort/build
-"AllEights" start time: Jan 25 01:24 EST
+"AllEights" start time: Jan 29 20:36 EST
 Output:
 ----------------------------------------------------------
 /usr/bin/COMMAND: line 4: runUnitTests: command not found
@@ -44,7 +44,7 @@ Output:
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Failed.
-"AllEights" end time: Jan 25 01:24 EST
+"AllEights" end time: Jan 29 20:36 EST
 "AllEights" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -52,7 +52,7 @@ Test Failed.
 4/4 Test: Empty
 Command: "/usr/bin/COMMAND" "runUnitTests"
 Directory: /Users/chris/Merge-Sort/build
-"Empty" start time: Jan 25 01:24 EST
+"Empty" start time: Jan 29 20:36 EST
 Output:
 ----------------------------------------------------------
 /usr/bin/COMMAND: line 4: runUnitTests: command not found
@@ -60,8 +60,8 @@ Output:
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Failed.
-"Empty" end time: Jan 25 01:24 EST
+"Empty" end time: Jan 29 20:36 EST
 "Empty" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Jan 25 01:24 EST
+End testing: Jan 29 20:36 EST
