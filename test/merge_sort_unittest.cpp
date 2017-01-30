@@ -38,6 +38,6 @@ TEST(MergeSortTest, Empty){
   int expected_result[0] = {};
   int *gathered_result = MergeSort(start,0);
   //EXPECT_TRUE(ArraysMatch(expected_result, gathered_result, 0));
-  ASSERT_DEATH(MergeSort(start,0), "");
+  ASSERT_DEATH(MergeSort(start,0),"Error: Empty Array \n");
 }
 
