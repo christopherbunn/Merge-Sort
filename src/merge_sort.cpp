@@ -1,3 +1,5 @@
+#include "merge_sort.h"
+
 int main() {
 	/* Code to test the MergeSort function. */
 	

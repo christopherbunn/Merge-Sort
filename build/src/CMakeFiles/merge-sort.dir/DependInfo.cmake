@@ -10,12 +10,13 @@ set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "../include"
   "../lib"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/Users/chris/Merge-Sort/build/lib/CMakeFiles/MS-Lib.dir/DependInfo.cmake"
+  "/Users/chris/Merge-Sort/build/test/CMakeFiles/MS-Lib.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

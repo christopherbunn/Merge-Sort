@@ -166,6 +166,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named merge-sort
+
+# Build rule for target.
+merge-sort: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 merge-sort
+.PHONY : merge-sort
+
+# fast build rule for target.
+merge-sort/fast:
+	$(MAKE) -f src/CMakeFiles/merge-sort.dir/build.make src/CMakeFiles/merge-sort.dir/build
+.PHONY : merge-sort/fast
+
+#=============================================================================
 # Target rules for targets named runUnitTests
 
 # Build rule for target.
@@ -175,34 +188,21 @@ runUnitTests: cmake_check_build_system
 
 # fast build rule for target.
 runUnitTests/fast:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/build
+	$(MAKE) -f test/CMakeFiles/runUnitTests.dir/build.make test/CMakeFiles/runUnitTests.dir/build
 .PHONY : runUnitTests/fast
 
 #=============================================================================
-# Target rules for targets named Merge-Sort
+# Target rules for targets named MS-Lib
 
 # Build rule for target.
-Merge-Sort: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Merge-Sort
-.PHONY : Merge-Sort
+MS-Lib: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 MS-Lib
+.PHONY : MS-Lib
 
 # fast build rule for target.
-Merge-Sort/fast:
-	$(MAKE) -f CMakeFiles/Merge-Sort.dir/build.make CMakeFiles/Merge-Sort.dir/build
-.PHONY : Merge-Sort/fast
-
-#=============================================================================
-# Target rules for targets named ms_lib
-
-# Build rule for target.
-ms_lib: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 ms_lib
-.PHONY : ms_lib
-
-# fast build rule for target.
-ms_lib/fast:
-	$(MAKE) -f CMakeFiles/ms_lib.dir/build.make CMakeFiles/ms_lib.dir/build
-.PHONY : ms_lib/fast
+MS-Lib/fast:
+	$(MAKE) -f test/CMakeFiles/MS-Lib.dir/build.make test/CMakeFiles/MS-Lib.dir/build
+.PHONY : MS-Lib/fast
 
 #=============================================================================
 # Target rules for targets named gtest_main
@@ -214,7 +214,7 @@ gtest_main: cmake_check_build_system
 
 # fast build rule for target.
 gtest_main/fast:
-	$(MAKE) -f lib/gtest/CMakeFiles/gtest_main.dir/build.make lib/gtest/CMakeFiles/gtest_main.dir/build
+	$(MAKE) -f test/build/CMakeFiles/gtest_main.dir/build.make test/build/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
 
 #=============================================================================
@@ -227,89 +227,8 @@ gtest: cmake_check_build_system
 
 # fast build rule for target.
 gtest/fast:
-	$(MAKE) -f lib/gtest/CMakeFiles/gtest.dir/build.make lib/gtest/CMakeFiles/gtest.dir/build
+	$(MAKE) -f test/build/CMakeFiles/gtest.dir/build.make test/build/CMakeFiles/gtest.dir/build
 .PHONY : gtest/fast
-
-merge_sort.o: merge_sort.cpp.o
-
-.PHONY : merge_sort.o
-
-# target to build an object file
-merge_sort.cpp.o:
-	$(MAKE) -f CMakeFiles/Merge-Sort.dir/build.make CMakeFiles/Merge-Sort.dir/merge_sort.cpp.o
-.PHONY : merge_sort.cpp.o
-
-merge_sort.i: merge_sort.cpp.i
-
-.PHONY : merge_sort.i
-
-# target to preprocess a source file
-merge_sort.cpp.i:
-	$(MAKE) -f CMakeFiles/Merge-Sort.dir/build.make CMakeFiles/Merge-Sort.dir/merge_sort.cpp.i
-.PHONY : merge_sort.cpp.i
-
-merge_sort.s: merge_sort.cpp.s
-
-.PHONY : merge_sort.s
-
-# target to generate assembly for a file
-merge_sort.cpp.s:
-	$(MAKE) -f CMakeFiles/Merge-Sort.dir/build.make CMakeFiles/Merge-Sort.dir/merge_sort.cpp.s
-.PHONY : merge_sort.cpp.s
-
-merge_sort_unittest.o: merge_sort_unittest.cpp.o
-
-.PHONY : merge_sort_unittest.o
-
-# target to build an object file
-merge_sort_unittest.cpp.o:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/merge_sort_unittest.cpp.o
-.PHONY : merge_sort_unittest.cpp.o
-
-merge_sort_unittest.i: merge_sort_unittest.cpp.i
-
-.PHONY : merge_sort_unittest.i
-
-# target to preprocess a source file
-merge_sort_unittest.cpp.i:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/merge_sort_unittest.cpp.i
-.PHONY : merge_sort_unittest.cpp.i
-
-merge_sort_unittest.s: merge_sort_unittest.cpp.s
-
-.PHONY : merge_sort_unittest.s
-
-# target to generate assembly for a file
-merge_sort_unittest.cpp.s:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/merge_sort_unittest.cpp.s
-.PHONY : merge_sort_unittest.cpp.s
-
-ms_lib.o: ms_lib.cpp.o
-
-.PHONY : ms_lib.o
-
-# target to build an object file
-ms_lib.cpp.o:
-	$(MAKE) -f CMakeFiles/ms_lib.dir/build.make CMakeFiles/ms_lib.dir/ms_lib.cpp.o
-.PHONY : ms_lib.cpp.o
-
-ms_lib.i: ms_lib.cpp.i
-
-.PHONY : ms_lib.i
-
-# target to preprocess a source file
-ms_lib.cpp.i:
-	$(MAKE) -f CMakeFiles/ms_lib.dir/build.make CMakeFiles/ms_lib.dir/ms_lib.cpp.i
-.PHONY : ms_lib.cpp.i
-
-ms_lib.s: ms_lib.cpp.s
-
-.PHONY : ms_lib.s
-
-# target to generate assembly for a file
-ms_lib.cpp.s:
-	$(MAKE) -f CMakeFiles/ms_lib.dir/build.make CMakeFiles/ms_lib.dir/ms_lib.cpp.s
-.PHONY : ms_lib.cpp.s
 
 # Help Target
 help:
@@ -324,20 +243,11 @@ help:
 	@echo "... edit_cache"
 	@echo "... install/local"
 	@echo "... test"
+	@echo "... merge-sort"
 	@echo "... runUnitTests"
-	@echo "... Merge-Sort"
-	@echo "... ms_lib"
+	@echo "... MS-Lib"
 	@echo "... gtest_main"
 	@echo "... gtest"
-	@echo "... merge_sort.o"
-	@echo "... merge_sort.i"
-	@echo "... merge_sort.s"
-	@echo "... merge_sort_unittest.o"
-	@echo "... merge_sort_unittest.i"
-	@echo "... merge_sort_unittest.s"
-	@echo "... ms_lib.o"
-	@echo "... ms_lib.i"
-	@echo "... ms_lib.s"
 .PHONY : help
 
 

@@ -6,5 +6,5 @@ CXX_FLAGS =
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/chris/Merge-Sort/lib 
+CXX_INCLUDES = -I/Users/chris/Merge-Sort/include -I/Users/chris/Merge-Sort/lib 
 

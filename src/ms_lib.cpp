@@ -22,8 +22,8 @@ void Merge(int *A,int *L,int leftCount,int *R,int rightCount) {
 
 // Recursive function to sort an array of integers. 
 int* MergeSort(int *A,int n) {
-	if (*A[0] == NULL){
-	return -10
+	if (sizeof(*A) < sizeof(int)){
+	cerr << "";
 	}
 	int mid,i, *L, *R;
 	if(n < 2) return; // base condition. If the array has less than two element, do nothing. 

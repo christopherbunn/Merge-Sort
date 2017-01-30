@@ -60,211 +60,269 @@ CMAKE_SOURCE_DIR = /Users/chris/Merge-Sort
 CMAKE_BINARY_DIR = /Users/chris/Merge-Sort/build
 
 #=============================================================================
-# Target rules for target CMakeFiles/runUnitTests.dir
+# Directory level rules for directory src
+
+# Convenience name for "all" pass in the directory.
+src/all: src/CMakeFiles/merge-sort.dir/all
+
+.PHONY : src/all
+
+# Convenience name for "clean" pass in the directory.
+src/clean: src/CMakeFiles/merge-sort.dir/clean
+
+.PHONY : src/clean
+
+# Convenience name for "preinstall" pass in the directory.
+src/preinstall:
+
+.PHONY : src/preinstall
+
+#=============================================================================
+# Target rules for target src/CMakeFiles/merge-sort.dir
 
 # All Build rule for target.
-CMakeFiles/runUnitTests.dir/all: CMakeFiles/ms_lib.dir/all
-CMakeFiles/runUnitTests.dir/all: lib/gtest/CMakeFiles/gtest_main.dir/all
-CMakeFiles/runUnitTests.dir/all: lib/gtest/CMakeFiles/gtest.dir/all
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/depend
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/chris/Merge-Sort/build/CMakeFiles --progress-num=9,10 "Built target runUnitTests"
-.PHONY : CMakeFiles/runUnitTests.dir/all
+src/CMakeFiles/merge-sort.dir/all: test/CMakeFiles/MS-Lib.dir/all
+	$(MAKE) -f src/CMakeFiles/merge-sort.dir/build.make src/CMakeFiles/merge-sort.dir/depend
+	$(MAKE) -f src/CMakeFiles/merge-sort.dir/build.make src/CMakeFiles/merge-sort.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/chris/Merge-Sort/build/CMakeFiles --progress-num=7,8 "Built target merge-sort"
+.PHONY : src/CMakeFiles/merge-sort.dir/all
 
 # Include target in all.
-all: CMakeFiles/runUnitTests.dir/all
+all: src/CMakeFiles/merge-sort.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/runUnitTests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/chris/Merge-Sort/build/CMakeFiles 8
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/runUnitTests.dir/all
+src/CMakeFiles/merge-sort.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/chris/Merge-Sort/build/CMakeFiles 4
+	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/merge-sort.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/chris/Merge-Sort/build/CMakeFiles 0
-.PHONY : CMakeFiles/runUnitTests.dir/rule
+.PHONY : src/CMakeFiles/merge-sort.dir/rule
 
 # Convenience name for target.
-runUnitTests: CMakeFiles/runUnitTests.dir/rule
+merge-sort: src/CMakeFiles/merge-sort.dir/rule
+
+.PHONY : merge-sort
+
+# clean rule for target.
+src/CMakeFiles/merge-sort.dir/clean:
+	$(MAKE) -f src/CMakeFiles/merge-sort.dir/build.make src/CMakeFiles/merge-sort.dir/clean
+.PHONY : src/CMakeFiles/merge-sort.dir/clean
+
+# clean rule for target.
+clean: src/CMakeFiles/merge-sort.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory test
+
+# Convenience name for "all" pass in the directory.
+test/all: test/CMakeFiles/runUnitTests.dir/all
+test/all: test/CMakeFiles/MS-Lib.dir/all
+test/all: test/build/all
+
+.PHONY : test/all
+
+# Convenience name for "clean" pass in the directory.
+test/clean: test/CMakeFiles/runUnitTests.dir/clean
+test/clean: test/CMakeFiles/MS-Lib.dir/clean
+test/clean: test/build/clean
+
+.PHONY : test/clean
+
+# Convenience name for "preinstall" pass in the directory.
+test/preinstall: test/build/preinstall
+
+.PHONY : test/preinstall
+
+#=============================================================================
+# Target rules for target test/CMakeFiles/runUnitTests.dir
+
+# All Build rule for target.
+test/CMakeFiles/runUnitTests.dir/all: test/CMakeFiles/MS-Lib.dir/all
+test/CMakeFiles/runUnitTests.dir/all: test/build/CMakeFiles/gtest_main.dir/all
+test/CMakeFiles/runUnitTests.dir/all: test/build/CMakeFiles/gtest.dir/all
+	$(MAKE) -f test/CMakeFiles/runUnitTests.dir/build.make test/CMakeFiles/runUnitTests.dir/depend
+	$(MAKE) -f test/CMakeFiles/runUnitTests.dir/build.make test/CMakeFiles/runUnitTests.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/chris/Merge-Sort/build/CMakeFiles --progress-num=9,10 "Built target runUnitTests"
+.PHONY : test/CMakeFiles/runUnitTests.dir/all
+
+# Include target in all.
+all: test/CMakeFiles/runUnitTests.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+test/CMakeFiles/runUnitTests.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/chris/Merge-Sort/build/CMakeFiles 8
+	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/runUnitTests.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/chris/Merge-Sort/build/CMakeFiles 0
+.PHONY : test/CMakeFiles/runUnitTests.dir/rule
+
+# Convenience name for target.
+runUnitTests: test/CMakeFiles/runUnitTests.dir/rule
 
 .PHONY : runUnitTests
 
 # clean rule for target.
-CMakeFiles/runUnitTests.dir/clean:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/clean
-.PHONY : CMakeFiles/runUnitTests.dir/clean
+test/CMakeFiles/runUnitTests.dir/clean:
+	$(MAKE) -f test/CMakeFiles/runUnitTests.dir/build.make test/CMakeFiles/runUnitTests.dir/clean
+.PHONY : test/CMakeFiles/runUnitTests.dir/clean
 
 # clean rule for target.
-clean: CMakeFiles/runUnitTests.dir/clean
+clean: test/CMakeFiles/runUnitTests.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/Merge-Sort.dir
+# Target rules for target test/CMakeFiles/MS-Lib.dir
 
 # All Build rule for target.
-CMakeFiles/Merge-Sort.dir/all: CMakeFiles/ms_lib.dir/all
-	$(MAKE) -f CMakeFiles/Merge-Sort.dir/build.make CMakeFiles/Merge-Sort.dir/depend
-	$(MAKE) -f CMakeFiles/Merge-Sort.dir/build.make CMakeFiles/Merge-Sort.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/chris/Merge-Sort/build/CMakeFiles --progress-num=1,2 "Built target Merge-Sort"
-.PHONY : CMakeFiles/Merge-Sort.dir/all
+test/CMakeFiles/MS-Lib.dir/all:
+	$(MAKE) -f test/CMakeFiles/MS-Lib.dir/build.make test/CMakeFiles/MS-Lib.dir/depend
+	$(MAKE) -f test/CMakeFiles/MS-Lib.dir/build.make test/CMakeFiles/MS-Lib.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/chris/Merge-Sort/build/CMakeFiles --progress-num=1,2 "Built target MS-Lib"
+.PHONY : test/CMakeFiles/MS-Lib.dir/all
 
 # Include target in all.
-all: CMakeFiles/Merge-Sort.dir/all
+all: test/CMakeFiles/MS-Lib.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/Merge-Sort.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/chris/Merge-Sort/build/CMakeFiles 4
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Merge-Sort.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/chris/Merge-Sort/build/CMakeFiles 0
-.PHONY : CMakeFiles/Merge-Sort.dir/rule
-
-# Convenience name for target.
-Merge-Sort: CMakeFiles/Merge-Sort.dir/rule
-
-.PHONY : Merge-Sort
-
-# clean rule for target.
-CMakeFiles/Merge-Sort.dir/clean:
-	$(MAKE) -f CMakeFiles/Merge-Sort.dir/build.make CMakeFiles/Merge-Sort.dir/clean
-.PHONY : CMakeFiles/Merge-Sort.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/Merge-Sort.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/ms_lib.dir
-
-# All Build rule for target.
-CMakeFiles/ms_lib.dir/all:
-	$(MAKE) -f CMakeFiles/ms_lib.dir/build.make CMakeFiles/ms_lib.dir/depend
-	$(MAKE) -f CMakeFiles/ms_lib.dir/build.make CMakeFiles/ms_lib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/chris/Merge-Sort/build/CMakeFiles --progress-num=7,8 "Built target ms_lib"
-.PHONY : CMakeFiles/ms_lib.dir/all
-
-# Include target in all.
-all: CMakeFiles/ms_lib.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/ms_lib.dir/rule: cmake_check_build_system
+test/CMakeFiles/MS-Lib.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/chris/Merge-Sort/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/ms_lib.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/MS-Lib.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/chris/Merge-Sort/build/CMakeFiles 0
-.PHONY : CMakeFiles/ms_lib.dir/rule
+.PHONY : test/CMakeFiles/MS-Lib.dir/rule
 
 # Convenience name for target.
-ms_lib: CMakeFiles/ms_lib.dir/rule
+MS-Lib: test/CMakeFiles/MS-Lib.dir/rule
 
-.PHONY : ms_lib
-
-# clean rule for target.
-CMakeFiles/ms_lib.dir/clean:
-	$(MAKE) -f CMakeFiles/ms_lib.dir/build.make CMakeFiles/ms_lib.dir/clean
-.PHONY : CMakeFiles/ms_lib.dir/clean
+.PHONY : MS-Lib
 
 # clean rule for target.
-clean: CMakeFiles/ms_lib.dir/clean
+test/CMakeFiles/MS-Lib.dir/clean:
+	$(MAKE) -f test/CMakeFiles/MS-Lib.dir/build.make test/CMakeFiles/MS-Lib.dir/clean
+.PHONY : test/CMakeFiles/MS-Lib.dir/clean
+
+# clean rule for target.
+clean: test/CMakeFiles/MS-Lib.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Directory level rules for directory lib/gtest
+# Directory level rules for directory test/build
 
 # Convenience name for "all" pass in the directory.
-lib/gtest/all: lib/gtest/CMakeFiles/gtest_main.dir/all
-lib/gtest/all: lib/gtest/CMakeFiles/gtest.dir/all
+test/build/all: test/build/CMakeFiles/gtest_main.dir/all
+test/build/all: test/build/CMakeFiles/gtest.dir/all
 
-.PHONY : lib/gtest/all
+.PHONY : test/build/all
 
 # Convenience name for "clean" pass in the directory.
-lib/gtest/clean: lib/gtest/CMakeFiles/gtest_main.dir/clean
-lib/gtest/clean: lib/gtest/CMakeFiles/gtest.dir/clean
+test/build/clean: test/build/CMakeFiles/gtest_main.dir/clean
+test/build/clean: test/build/CMakeFiles/gtest.dir/clean
 
-.PHONY : lib/gtest/clean
+.PHONY : test/build/clean
 
 # Convenience name for "preinstall" pass in the directory.
-lib/gtest/preinstall:
+test/build/preinstall:
 
-.PHONY : lib/gtest/preinstall
+.PHONY : test/build/preinstall
 
 #=============================================================================
-# Target rules for target lib/gtest/CMakeFiles/gtest_main.dir
+# Target rules for target test/build/CMakeFiles/gtest_main.dir
 
 # All Build rule for target.
-lib/gtest/CMakeFiles/gtest_main.dir/all: lib/gtest/CMakeFiles/gtest.dir/all
-	$(MAKE) -f lib/gtest/CMakeFiles/gtest_main.dir/build.make lib/gtest/CMakeFiles/gtest_main.dir/depend
-	$(MAKE) -f lib/gtest/CMakeFiles/gtest_main.dir/build.make lib/gtest/CMakeFiles/gtest_main.dir/build
+test/build/CMakeFiles/gtest_main.dir/all: test/build/CMakeFiles/gtest.dir/all
+	$(MAKE) -f test/build/CMakeFiles/gtest_main.dir/build.make test/build/CMakeFiles/gtest_main.dir/depend
+	$(MAKE) -f test/build/CMakeFiles/gtest_main.dir/build.make test/build/CMakeFiles/gtest_main.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/chris/Merge-Sort/build/CMakeFiles --progress-num=5,6 "Built target gtest_main"
-.PHONY : lib/gtest/CMakeFiles/gtest_main.dir/all
+.PHONY : test/build/CMakeFiles/gtest_main.dir/all
 
 # Include target in all.
-all: lib/gtest/CMakeFiles/gtest_main.dir/all
+all: test/build/CMakeFiles/gtest_main.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-lib/gtest/CMakeFiles/gtest_main.dir/rule: cmake_check_build_system
+test/build/CMakeFiles/gtest_main.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/chris/Merge-Sort/build/CMakeFiles 4
-	$(MAKE) -f CMakeFiles/Makefile2 lib/gtest/CMakeFiles/gtest_main.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 test/build/CMakeFiles/gtest_main.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/chris/Merge-Sort/build/CMakeFiles 0
-.PHONY : lib/gtest/CMakeFiles/gtest_main.dir/rule
+.PHONY : test/build/CMakeFiles/gtest_main.dir/rule
 
 # Convenience name for target.
-gtest_main: lib/gtest/CMakeFiles/gtest_main.dir/rule
+gtest_main: test/build/CMakeFiles/gtest_main.dir/rule
 
 .PHONY : gtest_main
 
 # clean rule for target.
-lib/gtest/CMakeFiles/gtest_main.dir/clean:
-	$(MAKE) -f lib/gtest/CMakeFiles/gtest_main.dir/build.make lib/gtest/CMakeFiles/gtest_main.dir/clean
-.PHONY : lib/gtest/CMakeFiles/gtest_main.dir/clean
+test/build/CMakeFiles/gtest_main.dir/clean:
+	$(MAKE) -f test/build/CMakeFiles/gtest_main.dir/build.make test/build/CMakeFiles/gtest_main.dir/clean
+.PHONY : test/build/CMakeFiles/gtest_main.dir/clean
 
 # clean rule for target.
-clean: lib/gtest/CMakeFiles/gtest_main.dir/clean
+clean: test/build/CMakeFiles/gtest_main.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target lib/gtest/CMakeFiles/gtest.dir
+# Target rules for target test/build/CMakeFiles/gtest.dir
 
 # All Build rule for target.
-lib/gtest/CMakeFiles/gtest.dir/all:
-	$(MAKE) -f lib/gtest/CMakeFiles/gtest.dir/build.make lib/gtest/CMakeFiles/gtest.dir/depend
-	$(MAKE) -f lib/gtest/CMakeFiles/gtest.dir/build.make lib/gtest/CMakeFiles/gtest.dir/build
+test/build/CMakeFiles/gtest.dir/all:
+	$(MAKE) -f test/build/CMakeFiles/gtest.dir/build.make test/build/CMakeFiles/gtest.dir/depend
+	$(MAKE) -f test/build/CMakeFiles/gtest.dir/build.make test/build/CMakeFiles/gtest.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/chris/Merge-Sort/build/CMakeFiles --progress-num=3,4 "Built target gtest"
-.PHONY : lib/gtest/CMakeFiles/gtest.dir/all
+.PHONY : test/build/CMakeFiles/gtest.dir/all
 
 # Include target in all.
-all: lib/gtest/CMakeFiles/gtest.dir/all
+all: test/build/CMakeFiles/gtest.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-lib/gtest/CMakeFiles/gtest.dir/rule: cmake_check_build_system
+test/build/CMakeFiles/gtest.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/chris/Merge-Sort/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 lib/gtest/CMakeFiles/gtest.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 test/build/CMakeFiles/gtest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/chris/Merge-Sort/build/CMakeFiles 0
-.PHONY : lib/gtest/CMakeFiles/gtest.dir/rule
+.PHONY : test/build/CMakeFiles/gtest.dir/rule
 
 # Convenience name for target.
-gtest: lib/gtest/CMakeFiles/gtest.dir/rule
+gtest: test/build/CMakeFiles/gtest.dir/rule
 
 .PHONY : gtest
 
 # clean rule for target.
-lib/gtest/CMakeFiles/gtest.dir/clean:
-	$(MAKE) -f lib/gtest/CMakeFiles/gtest.dir/build.make lib/gtest/CMakeFiles/gtest.dir/clean
-.PHONY : lib/gtest/CMakeFiles/gtest.dir/clean
+test/build/CMakeFiles/gtest.dir/clean:
+	$(MAKE) -f test/build/CMakeFiles/gtest.dir/build.make test/build/CMakeFiles/gtest.dir/clean
+.PHONY : test/build/CMakeFiles/gtest.dir/clean
 
 # clean rule for target.
-clean: lib/gtest/CMakeFiles/gtest.dir/clean
+clean: test/build/CMakeFiles/gtest.dir/clean
 
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory lib
+
+# Convenience name for "all" pass in the directory.
+lib/all:
+
+.PHONY : lib/all
+
+# Convenience name for "clean" pass in the directory.
+lib/clean:
+
+.PHONY : lib/clean
+
+# Convenience name for "preinstall" pass in the directory.
+lib/preinstall:
+
+.PHONY : lib/preinstall
 
 #=============================================================================
 # Special targets to cleanup operation of make.

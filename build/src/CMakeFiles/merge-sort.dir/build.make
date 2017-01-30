@@ -90,7 +90,7 @@ merge__sort_EXTERNAL_OBJECTS =
 
 src/merge-sort: src/CMakeFiles/merge-sort.dir/merge_sort.cpp.o
 src/merge-sort: src/CMakeFiles/merge-sort.dir/build.make
-src/merge-sort: lib/libMS-Lib.a
+src/merge-sort: test/libMS-Lib.a
 src/merge-sort: src/CMakeFiles/merge-sort.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/chris/Merge-Sort/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable merge-sort"
 	cd /Users/chris/Merge-Sort/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/merge-sort.dir/link.txt --verbose=$(VERBOSE)

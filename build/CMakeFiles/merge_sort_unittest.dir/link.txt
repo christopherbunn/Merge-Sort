@@ -1,1 +1,0 @@
-/Library/Developer/CommandLineTools/usr/bin/c++    -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/merge_sort_unittest.dir/merge_sort_unittest.cc.o  -o merge_sort_unittest lib/gtest/libgtest.a lib/gtest/libgtest_main.a libms_lib.a lib/gtest/libgtest.a 

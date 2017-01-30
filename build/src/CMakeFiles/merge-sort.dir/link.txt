@@ -1,1 +1,1 @@
-/Library/Developer/CommandLineTools/usr/bin/c++    -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/merge-sort.dir/merge_sort.cpp.o  -o merge-sort ../lib/libMS-Lib.a 
+/Library/Developer/CommandLineTools/usr/bin/c++    -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/merge-sort.dir/merge_sort.cpp.o  -o merge-sort ../test/libMS-Lib.a 

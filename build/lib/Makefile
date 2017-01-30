@@ -79,6 +79,16 @@ install/fast: preinstall/fast
 	/usr/local/lib/python2.7/site-packages/cmake/data/CMake.app/Contents/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
+
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -123,16 +133,6 @@ test/fast: test
 
 .PHONY : test/fast
 
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-
-.PHONY : list_install_components/fast
-
 # The main all target
 all: cmake_check_build_system
 	cd /Users/chris/Merge-Sort/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/chris/Merge-Sort/build/CMakeFiles /Users/chris/Merge-Sort/build/lib/CMakeFiles/progress.marks
@@ -165,48 +165,6 @@ depend:
 	cd /Users/chris/Merge-Sort/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-# Convenience name for target.
-lib/CMakeFiles/MS-Lib.dir/rule:
-	cd /Users/chris/Merge-Sort/build && $(MAKE) -f CMakeFiles/Makefile2 lib/CMakeFiles/MS-Lib.dir/rule
-.PHONY : lib/CMakeFiles/MS-Lib.dir/rule
-
-# Convenience name for target.
-MS-Lib: lib/CMakeFiles/MS-Lib.dir/rule
-
-.PHONY : MS-Lib
-
-# fast build rule for target.
-MS-Lib/fast:
-	cd /Users/chris/Merge-Sort/build && $(MAKE) -f lib/CMakeFiles/MS-Lib.dir/build.make lib/CMakeFiles/MS-Lib.dir/build
-.PHONY : MS-Lib/fast
-
-ms_lib.o: ms_lib.cpp.o
-
-.PHONY : ms_lib.o
-
-# target to build an object file
-ms_lib.cpp.o:
-	cd /Users/chris/Merge-Sort/build && $(MAKE) -f lib/CMakeFiles/MS-Lib.dir/build.make lib/CMakeFiles/MS-Lib.dir/ms_lib.cpp.o
-.PHONY : ms_lib.cpp.o
-
-ms_lib.i: ms_lib.cpp.i
-
-.PHONY : ms_lib.i
-
-# target to preprocess a source file
-ms_lib.cpp.i:
-	cd /Users/chris/Merge-Sort/build && $(MAKE) -f lib/CMakeFiles/MS-Lib.dir/build.make lib/CMakeFiles/MS-Lib.dir/ms_lib.cpp.i
-.PHONY : ms_lib.cpp.i
-
-ms_lib.s: ms_lib.cpp.s
-
-.PHONY : ms_lib.s
-
-# target to generate assembly for a file
-ms_lib.cpp.s:
-	cd /Users/chris/Merge-Sort/build && $(MAKE) -f lib/CMakeFiles/MS-Lib.dir/build.make lib/CMakeFiles/MS-Lib.dir/ms_lib.cpp.s
-.PHONY : ms_lib.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -215,15 +173,11 @@ help:
 	@echo "... depend"
 	@echo "... install/strip"
 	@echo "... install"
+	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... install/local"
 	@echo "... test"
-	@echo "... list_install_components"
-	@echo "... MS-Lib"
-	@echo "... ms_lib.o"
-	@echo "... ms_lib.i"
-	@echo "... ms_lib.s"
 .PHONY : help
 
 
