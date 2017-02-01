@@ -1,3 +1,3 @@
-add_executable (merge-sort merge_sort.cpp)
+#add_executable (Merge-Sort merge_sort.cpp)
 
-target_link_libraries (merge-sort LINK_PUBLIC MS-Lib)
+#target_link_libraries (Merge-Sort LINK_PUBLIC Merge-Sort)

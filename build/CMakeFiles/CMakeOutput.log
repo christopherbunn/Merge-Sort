@@ -1,6 +1,6 @@
-The system is: Darwin - 16.3.0 - x86_64
+The system is: Linux - 4.8.0-32-generic - x86_64
 Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
-Compiler: /Library/Developer/CommandLineTools/usr/bin/cc 
+Compiler: /usr/bin/cc 
 Build flags: 
 Id flags: 
 
@@ -10,10 +10,10 @@ The output was:
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
 
-The C compiler identification is AppleClang, found in "/Users/chris/Merge-Sort/build/CMakeFiles/3.7.1/CompilerIdC/a.out"
+The C compiler identification is GNU, found in "/home/chris/Documents/Merge-Sort/build/CMakeFiles/3.5.2/CompilerIdC/a.out"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
-Compiler: /Library/Developer/CommandLineTools/usr/bin/c++ 
+Compiler: /usr/bin/c++ 
 Build flags: 
 Id flags: 
 
@@ -23,101 +23,149 @@ The output was:
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
 
-The CXX compiler identification is AppleClang, found in "/Users/chris/Merge-Sort/build/CMakeFiles/3.7.1/CompilerIdCXX/a.out"
+The CXX compiler identification is GNU, found in "/home/chris/Documents/Merge-Sort/build/CMakeFiles/3.5.2/CompilerIdCXX/a.out"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: /Users/chris/Merge-Sort/build/CMakeFiles/CMakeTmp
+Change Dir: /home/chris/Documents/Merge-Sort/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_45309/fast"
-/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_45309.dir/build.make CMakeFiles/cmTC_45309.dir/build
-Building C object CMakeFiles/cmTC_45309.dir/testCCompiler.c.o
-/Library/Developer/CommandLineTools/usr/bin/cc     -o CMakeFiles/cmTC_45309.dir/testCCompiler.c.o   -c /Users/chris/Merge-Sort/build/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTC_45309
-/usr/local/lib/python2.7/site-packages/cmake/data/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTC_45309.dir/link.txt --verbose=1
-/Library/Developer/CommandLineTools/usr/bin/cc    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_45309.dir/testCCompiler.c.o  -o cmTC_45309 
+Run Build Command:"/usr/bin/make" "cmTC_ef5b2/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ef5b2.dir/build.make CMakeFiles/cmTC_ef5b2.dir/build
+make[1]: Entering directory '/home/chris/Documents/Merge-Sort/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ef5b2.dir/testCCompiler.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_ef5b2.dir/testCCompiler.c.o   -c /home/chris/Documents/Merge-Sort/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_ef5b2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ef5b2.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_ef5b2.dir/testCCompiler.c.o  -o cmTC_ef5b2 
+make[1]: Leaving directory '/home/chris/Documents/Merge-Sort/build/CMakeFiles/CMakeTmp'
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: /Users/chris/Merge-Sort/build/CMakeFiles/CMakeTmp
+Change Dir: /home/chris/Documents/Merge-Sort/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_f64d4/fast"
-/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_f64d4.dir/build.make CMakeFiles/cmTC_f64d4.dir/build
-Building C object CMakeFiles/cmTC_f64d4.dir/CMakeCCompilerABI.c.o
-/Library/Developer/CommandLineTools/usr/bin/cc     -o CMakeFiles/cmTC_f64d4.dir/CMakeCCompilerABI.c.o   -c /usr/local/lib/python2.7/site-packages/cmake/data/CMake.app/Contents/share/cmake-3.7/Modules/CMakeCCompilerABI.c
-Linking C executable cmTC_f64d4
-/usr/local/lib/python2.7/site-packages/cmake/data/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f64d4.dir/link.txt --verbose=1
-/Library/Developer/CommandLineTools/usr/bin/cc    -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_f64d4.dir/CMakeCCompilerABI.c.o  -o cmTC_f64d4  
-Apple LLVM version 8.0.0 (clang-800.0.42.1)
-Target: x86_64-apple-darwin16.3.0
+Run Build Command:"/usr/bin/make" "cmTC_b6994/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b6994.dir/build.make CMakeFiles/cmTC_b6994.dir/build
+make[1]: Entering directory '/home/chris/Documents/Merge-Sort/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b6994.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_b6994.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.5/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_b6994
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b6994.dir/link.txt --verbose=1
+/usr/bin/cc      -v CMakeFiles/cmTC_b6994.dir/CMakeCCompilerABI.c.o  -o cmTC_b6994  
+Using built-in specs.
+COLLECT_GCC=/usr/bin/cc
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/6/lto-wrapper
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 6.2.0-5ubuntu12' --with-bugurl=file:///usr/share/doc/gcc-6/README.Bugs --enable-languages=c,ada,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-6 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-6-amd64/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-6-amd64 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-6-amd64 --with-arch-directory=amd64 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
 Thread model: posix
-InstalledDir: /Library/Developer/CommandLineTools/usr/bin
- "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -dynamic -arch x86_64 -macosx_version_min 10.12.0 -o cmTC_f64d4 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_f64d4.dir/CMakeCCompilerABI.c.o -lSystem /Library/Developer/CommandLineTools/usr/bin/../lib/clang/8.0.0/lib/darwin/libclang_rt.osx.a
-@(#)PROGRAM:ld  PROJECT:ld64-274.2
-configured to support archs: armv6 armv7 armv7s arm64 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em (tvOS)
-Library search paths:
-	/usr/lib
-	/usr/local/lib
-Framework search paths:
-	/Library/Frameworks/
-	/System/Library/Frameworks/
+gcc version 6.2.0 20161005 (Ubuntu 6.2.0-5ubuntu12) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/6/:/usr/lib/gcc/x86_64-linux-gnu/6/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/6/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/6/:/usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/6/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/6/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_b6994' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/6/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/6/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/6/lto-wrapper -plugin-opt=-fresolution=/tmp/ccleU91V.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_b6994 /usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/6/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/6 -L/usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/6/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/6/../../.. CMakeFiles/cmTC_b6994.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/6/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_b6994' '-mtune=generic' '-march=x86-64'
+make[1]: Leaving directory '/home/chris/Documents/Merge-Sort/build/CMakeFiles/CMakeTmp'
 
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /Users/chris/Merge-Sort/build/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/chris/Documents/Merge-Sort/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_f64d4/fast"]
-  ignore line: [/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_f64d4.dir/build.make CMakeFiles/cmTC_f64d4.dir/build]
-  ignore line: [Building C object CMakeFiles/cmTC_f64d4.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/Library/Developer/CommandLineTools/usr/bin/cc     -o CMakeFiles/cmTC_f64d4.dir/CMakeCCompilerABI.c.o   -c /usr/local/lib/python2.7/site-packages/cmake/data/CMake.app/Contents/share/cmake-3.7/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTC_f64d4]
-  ignore line: [/usr/local/lib/python2.7/site-packages/cmake/data/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f64d4.dir/link.txt --verbose=1]
-  ignore line: [/Library/Developer/CommandLineTools/usr/bin/cc    -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_f64d4.dir/CMakeCCompilerABI.c.o  -o cmTC_f64d4  ]
-  ignore line: [Apple LLVM version 8.0.0 (clang-800.0.42.1)]
-  ignore line: [Target: x86_64-apple-darwin16.3.0]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_b6994/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_b6994.dir/build.make CMakeFiles/cmTC_b6994.dir/build]
+  ignore line: [make[1]: Entering directory '/home/chris/Documents/Merge-Sort/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_b6994.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc     -o CMakeFiles/cmTC_b6994.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.5/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_b6994]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b6994.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc      -v CMakeFiles/cmTC_b6994.dir/CMakeCCompilerABI.c.o  -o cmTC_b6994  ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/cc]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/6/lto-wrapper]
+  ignore line: [Target: x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 6.2.0-5ubuntu12' --with-bugurl=file:///usr/share/doc/gcc-6/README.Bugs --enable-languages=c,ada,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-6 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-6-amd64/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-6-amd64 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-6-amd64 --with-arch-directory=amd64 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
   ignore line: [Thread model: posix]
-  ignore line: [InstalledDir: /Library/Developer/CommandLineTools/usr/bin]
-  link line: [ "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -dynamic -arch x86_64 -macosx_version_min 10.12.0 -o cmTC_f64d4 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_f64d4.dir/CMakeCCompilerABI.c.o -lSystem /Library/Developer/CommandLineTools/usr/bin/../lib/clang/8.0.0/lib/darwin/libclang_rt.osx.a]
-    arg [/Library/Developer/CommandLineTools/usr/bin/ld] ==> ignore
-    arg [-demangle] ==> ignore
-    arg [-dynamic] ==> ignore
-    arg [-arch] ==> ignore
-    arg [x86_64] ==> ignore
-    arg [-macosx_version_min] ==> ignore
-    arg [10.12.0] ==> ignore
+  ignore line: [gcc version 6.2.0 20161005 (Ubuntu 6.2.0-5ubuntu12) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/6/:/usr/lib/gcc/x86_64-linux-gnu/6/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/6/:/usr/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/6/:/usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/6/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/6/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_b6994' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/6/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/6/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/6/lto-wrapper -plugin-opt=-fresolution=/tmp/ccleU91V.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_b6994 /usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/6/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/6 -L/usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/6/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/6/../../.. CMakeFiles/cmTC_b6994.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/6/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu/crtn.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/6/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/6/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/6/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccleU91V.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [--sysroot=/] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-pie] ==> ignore
+    arg [-znow] ==> ignore
+    arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_f64d4] ==> ignore
-    arg [-search_paths_first] ==> ignore
-    arg [-headerpad_max_install_names] ==> ignore
-    arg [-v] ==> ignore
-    arg [CMakeFiles/cmTC_f64d4.dir/CMakeCCompilerABI.c.o] ==> ignore
-    arg [-lSystem] ==> lib [System]
-    arg [/Library/Developer/CommandLineTools/usr/bin/../lib/clang/8.0.0/lib/darwin/libclang_rt.osx.a] ==> lib [/Library/Developer/CommandLineTools/usr/bin/../lib/clang/8.0.0/lib/darwin/libclang_rt.osx.a]
-  Library search paths: [;/usr/lib;/usr/local/lib]
-  Framework search paths: [;/Library/Frameworks/;/System/Library/Frameworks/]
-  remove lib [System]
-  remove lib [/Library/Developer/CommandLineTools/usr/bin/../lib/clang/8.0.0/lib/darwin/libclang_rt.osx.a]
-  collapse library dir [/usr/lib] ==> [/usr/lib]
-  collapse library dir [/usr/local/lib] ==> [/usr/local/lib]
-  collapse framework dir [/Library/Frameworks/] ==> [/Library/Frameworks]
-  collapse framework dir [/System/Library/Frameworks/] ==> [/System/Library/Frameworks]
-  implicit libs: []
-  implicit dirs: [/usr/lib;/usr/local/lib]
-  implicit fwks: [/Library/Frameworks;/System/Library/Frameworks]
+    arg [cmTC_b6994] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu/Scrt1.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu/crti.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/6/crtbeginS.o] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/6] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/6]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/6/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/6/../../../../lib]
+    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+    arg [-L/lib/../lib] ==> dir [/lib/../lib]
+    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/6/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/6/../../..]
+    arg [CMakeFiles/cmTC_b6994.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/6/crtendS.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu/crtn.o] ==> ignore
+  remove lib [gcc]
+  remove lib [gcc_s]
+  remove lib [gcc]
+  remove lib [gcc_s]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/6] ==> [/usr/lib/gcc/x86_64-linux-gnu/6]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/6/../../../../lib] ==> [/usr/lib]
+  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+  collapse library dir [/lib/../lib] ==> [/lib]
+  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/6/../../..] ==> [/usr/lib]
+  implicit libs: [c]
+  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/6;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+  implicit fwks: []
 
 
 
 
 Detecting C [-std=c11] compiler features compiled with the following output:
-Change Dir: /Users/chris/Merge-Sort/build/CMakeFiles/CMakeTmp
+Change Dir: /home/chris/Documents/Merge-Sort/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_f9fe1/fast"
-/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_f9fe1.dir/build.make CMakeFiles/cmTC_f9fe1.dir/build
-Building C object CMakeFiles/cmTC_f9fe1.dir/feature_tests.c.o
-/Library/Developer/CommandLineTools/usr/bin/cc    -std=c11 -o CMakeFiles/cmTC_f9fe1.dir/feature_tests.c.o   -c /Users/chris/Merge-Sort/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_f9fe1
-/usr/local/lib/python2.7/site-packages/cmake/data/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f9fe1.dir/link.txt --verbose=1
-/Library/Developer/CommandLineTools/usr/bin/cc    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_f9fe1.dir/feature_tests.c.o  -o cmTC_f9fe1 
+Run Build Command:"/usr/bin/make" "cmTC_98d82/fast"
+/usr/bin/make -f CMakeFiles/cmTC_98d82.dir/build.make CMakeFiles/cmTC_98d82.dir/build
+make[1]: Entering directory '/home/chris/Documents/Merge-Sort/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_98d82.dir/feature_tests.c.o
+/usr/bin/cc    -std=c11 -o CMakeFiles/cmTC_98d82.dir/feature_tests.c.o   -c /home/chris/Documents/Merge-Sort/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_98d82
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_98d82.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_98d82.dir/feature_tests.c.o  -o cmTC_98d82 
+make[1]: Leaving directory '/home/chris/Documents/Merge-Sort/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -127,15 +175,17 @@ Linking C executable cmTC_f9fe1
 
 
 Detecting C [-std=c99] compiler features compiled with the following output:
-Change Dir: /Users/chris/Merge-Sort/build/CMakeFiles/CMakeTmp
+Change Dir: /home/chris/Documents/Merge-Sort/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_7c35d/fast"
-/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_7c35d.dir/build.make CMakeFiles/cmTC_7c35d.dir/build
-Building C object CMakeFiles/cmTC_7c35d.dir/feature_tests.c.o
-/Library/Developer/CommandLineTools/usr/bin/cc    -std=c99 -o CMakeFiles/cmTC_7c35d.dir/feature_tests.c.o   -c /Users/chris/Merge-Sort/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_7c35d
-/usr/local/lib/python2.7/site-packages/cmake/data/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7c35d.dir/link.txt --verbose=1
-/Library/Developer/CommandLineTools/usr/bin/cc    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_7c35d.dir/feature_tests.c.o  -o cmTC_7c35d 
+Run Build Command:"/usr/bin/make" "cmTC_30e47/fast"
+/usr/bin/make -f CMakeFiles/cmTC_30e47.dir/build.make CMakeFiles/cmTC_30e47.dir/build
+make[1]: Entering directory '/home/chris/Documents/Merge-Sort/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_30e47.dir/feature_tests.c.o
+/usr/bin/cc    -std=c99 -o CMakeFiles/cmTC_30e47.dir/feature_tests.c.o   -c /home/chris/Documents/Merge-Sort/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_30e47
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_30e47.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_30e47.dir/feature_tests.c.o  -o cmTC_30e47 
+make[1]: Leaving directory '/home/chris/Documents/Merge-Sort/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -145,15 +195,17 @@ Linking C executable cmTC_7c35d
 
 
 Detecting C [-std=c90] compiler features compiled with the following output:
-Change Dir: /Users/chris/Merge-Sort/build/CMakeFiles/CMakeTmp
+Change Dir: /home/chris/Documents/Merge-Sort/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_f3362/fast"
-/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_f3362.dir/build.make CMakeFiles/cmTC_f3362.dir/build
-Building C object CMakeFiles/cmTC_f3362.dir/feature_tests.c.o
-/Library/Developer/CommandLineTools/usr/bin/cc    -std=c90 -o CMakeFiles/cmTC_f3362.dir/feature_tests.c.o   -c /Users/chris/Merge-Sort/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_f3362
-/usr/local/lib/python2.7/site-packages/cmake/data/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f3362.dir/link.txt --verbose=1
-/Library/Developer/CommandLineTools/usr/bin/cc    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_f3362.dir/feature_tests.c.o  -o cmTC_f3362 
+Run Build Command:"/usr/bin/make" "cmTC_e906a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e906a.dir/build.make CMakeFiles/cmTC_e906a.dir/build
+make[1]: Entering directory '/home/chris/Documents/Merge-Sort/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e906a.dir/feature_tests.c.o
+/usr/bin/cc    -std=c90 -o CMakeFiles/cmTC_e906a.dir/feature_tests.c.o   -c /home/chris/Documents/Merge-Sort/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_e906a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e906a.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_e906a.dir/feature_tests.c.o  -o cmTC_e906a 
+make[1]: Leaving directory '/home/chris/Documents/Merge-Sort/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -161,99 +213,144 @@ Linking C executable cmTC_f3362
     Feature record: C_FEATURE:0c_static_assert
     Feature record: C_FEATURE:0c_variadic_macros
 Determining if the CXX compiler works passed with the following output:
-Change Dir: /Users/chris/Merge-Sort/build/CMakeFiles/CMakeTmp
+Change Dir: /home/chris/Documents/Merge-Sort/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_384fd/fast"
-/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_384fd.dir/build.make CMakeFiles/cmTC_384fd.dir/build
-Building CXX object CMakeFiles/cmTC_384fd.dir/testCXXCompiler.cxx.o
-/Library/Developer/CommandLineTools/usr/bin/c++      -o CMakeFiles/cmTC_384fd.dir/testCXXCompiler.cxx.o -c /Users/chris/Merge-Sort/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTC_384fd
-/usr/local/lib/python2.7/site-packages/cmake/data/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTC_384fd.dir/link.txt --verbose=1
-/Library/Developer/CommandLineTools/usr/bin/c++     -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_384fd.dir/testCXXCompiler.cxx.o  -o cmTC_384fd 
+Run Build Command:"/usr/bin/make" "cmTC_d43b6/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d43b6.dir/build.make CMakeFiles/cmTC_d43b6.dir/build
+make[1]: Entering directory '/home/chris/Documents/Merge-Sort/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_d43b6.dir/testCXXCompiler.cxx.o
+/usr/bin/c++      -o CMakeFiles/cmTC_d43b6.dir/testCXXCompiler.cxx.o -c /home/chris/Documents/Merge-Sort/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_d43b6
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d43b6.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTC_d43b6.dir/testCXXCompiler.cxx.o  -o cmTC_d43b6 
+make[1]: Leaving directory '/home/chris/Documents/Merge-Sort/build/CMakeFiles/CMakeTmp'
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: /Users/chris/Merge-Sort/build/CMakeFiles/CMakeTmp
+Change Dir: /home/chris/Documents/Merge-Sort/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_01a31/fast"
-/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_01a31.dir/build.make CMakeFiles/cmTC_01a31.dir/build
-Building CXX object CMakeFiles/cmTC_01a31.dir/CMakeCXXCompilerABI.cpp.o
-/Library/Developer/CommandLineTools/usr/bin/c++      -o CMakeFiles/cmTC_01a31.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/lib/python2.7/site-packages/cmake/data/CMake.app/Contents/share/cmake-3.7/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTC_01a31
-/usr/local/lib/python2.7/site-packages/cmake/data/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTC_01a31.dir/link.txt --verbose=1
-/Library/Developer/CommandLineTools/usr/bin/c++     -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_01a31.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_01a31  
-Apple LLVM version 8.0.0 (clang-800.0.42.1)
-Target: x86_64-apple-darwin16.3.0
+Run Build Command:"/usr/bin/make" "cmTC_3d07f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_3d07f.dir/build.make CMakeFiles/cmTC_3d07f.dir/build
+make[1]: Entering directory '/home/chris/Documents/Merge-Sort/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_3d07f.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++      -o CMakeFiles/cmTC_3d07f.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.5/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_3d07f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3d07f.dir/link.txt --verbose=1
+/usr/bin/c++       -v CMakeFiles/cmTC_3d07f.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_3d07f  
+Using built-in specs.
+COLLECT_GCC=/usr/bin/c++
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/6/lto-wrapper
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 6.2.0-5ubuntu12' --with-bugurl=file:///usr/share/doc/gcc-6/README.Bugs --enable-languages=c,ada,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-6 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-6-amd64/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-6-amd64 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-6-amd64 --with-arch-directory=amd64 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
 Thread model: posix
-InstalledDir: /Library/Developer/CommandLineTools/usr/bin
- "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -dynamic -arch x86_64 -macosx_version_min 10.12.0 -o cmTC_01a31 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_01a31.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Library/Developer/CommandLineTools/usr/bin/../lib/clang/8.0.0/lib/darwin/libclang_rt.osx.a
-@(#)PROGRAM:ld  PROJECT:ld64-274.2
-configured to support archs: armv6 armv7 armv7s arm64 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em (tvOS)
-Library search paths:
-	/usr/lib
-	/usr/local/lib
-Framework search paths:
-	/Library/Frameworks/
-	/System/Library/Frameworks/
+gcc version 6.2.0 20161005 (Ubuntu 6.2.0-5ubuntu12) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/6/:/usr/lib/gcc/x86_64-linux-gnu/6/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/6/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/6/:/usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/6/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/6/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_3d07f' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/6/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/6/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/6/lto-wrapper -plugin-opt=-fresolution=/tmp/ccs1uNdl.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_3d07f /usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/6/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/6 -L/usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/6/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/6/../../.. CMakeFiles/cmTC_3d07f.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/6/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_3d07f' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+make[1]: Leaving directory '/home/chris/Documents/Merge-Sort/build/CMakeFiles/CMakeTmp'
 
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /Users/chris/Merge-Sort/build/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/chris/Documents/Merge-Sort/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_01a31/fast"]
-  ignore line: [/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_01a31.dir/build.make CMakeFiles/cmTC_01a31.dir/build]
-  ignore line: [Building CXX object CMakeFiles/cmTC_01a31.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/Library/Developer/CommandLineTools/usr/bin/c++      -o CMakeFiles/cmTC_01a31.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/lib/python2.7/site-packages/cmake/data/CMake.app/Contents/share/cmake-3.7/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX executable cmTC_01a31]
-  ignore line: [/usr/local/lib/python2.7/site-packages/cmake/data/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTC_01a31.dir/link.txt --verbose=1]
-  ignore line: [/Library/Developer/CommandLineTools/usr/bin/c++     -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_01a31.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_01a31  ]
-  ignore line: [Apple LLVM version 8.0.0 (clang-800.0.42.1)]
-  ignore line: [Target: x86_64-apple-darwin16.3.0]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_3d07f/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_3d07f.dir/build.make CMakeFiles/cmTC_3d07f.dir/build]
+  ignore line: [make[1]: Entering directory '/home/chris/Documents/Merge-Sort/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_3d07f.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++      -o CMakeFiles/cmTC_3d07f.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.5/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_3d07f]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3d07f.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++       -v CMakeFiles/cmTC_3d07f.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_3d07f  ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/c++]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/6/lto-wrapper]
+  ignore line: [Target: x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 6.2.0-5ubuntu12' --with-bugurl=file:///usr/share/doc/gcc-6/README.Bugs --enable-languages=c,ada,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-6 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-6-amd64/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-6-amd64 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-6-amd64 --with-arch-directory=amd64 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
   ignore line: [Thread model: posix]
-  ignore line: [InstalledDir: /Library/Developer/CommandLineTools/usr/bin]
-  link line: [ "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -dynamic -arch x86_64 -macosx_version_min 10.12.0 -o cmTC_01a31 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_01a31.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Library/Developer/CommandLineTools/usr/bin/../lib/clang/8.0.0/lib/darwin/libclang_rt.osx.a]
-    arg [/Library/Developer/CommandLineTools/usr/bin/ld] ==> ignore
-    arg [-demangle] ==> ignore
-    arg [-dynamic] ==> ignore
-    arg [-arch] ==> ignore
-    arg [x86_64] ==> ignore
-    arg [-macosx_version_min] ==> ignore
-    arg [10.12.0] ==> ignore
+  ignore line: [gcc version 6.2.0 20161005 (Ubuntu 6.2.0-5ubuntu12) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/6/:/usr/lib/gcc/x86_64-linux-gnu/6/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/6/:/usr/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/6/:/usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/6/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/6/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_3d07f' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/6/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/6/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/6/lto-wrapper -plugin-opt=-fresolution=/tmp/ccs1uNdl.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_3d07f /usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/6/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/6 -L/usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/6/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/6/../../.. CMakeFiles/cmTC_3d07f.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/6/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu/crtn.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/6/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/6/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/6/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccs1uNdl.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [--sysroot=/] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-pie] ==> ignore
+    arg [-znow] ==> ignore
+    arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_01a31] ==> ignore
-    arg [-search_paths_first] ==> ignore
-    arg [-headerpad_max_install_names] ==> ignore
-    arg [-v] ==> ignore
-    arg [CMakeFiles/cmTC_01a31.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
-    arg [-lc++] ==> lib [c++]
-    arg [-lSystem] ==> lib [System]
-    arg [/Library/Developer/CommandLineTools/usr/bin/../lib/clang/8.0.0/lib/darwin/libclang_rt.osx.a] ==> lib [/Library/Developer/CommandLineTools/usr/bin/../lib/clang/8.0.0/lib/darwin/libclang_rt.osx.a]
-  Library search paths: [;/usr/lib;/usr/local/lib]
-  Framework search paths: [;/Library/Frameworks/;/System/Library/Frameworks/]
-  remove lib [System]
-  remove lib [/Library/Developer/CommandLineTools/usr/bin/../lib/clang/8.0.0/lib/darwin/libclang_rt.osx.a]
-  collapse library dir [/usr/lib] ==> [/usr/lib]
-  collapse library dir [/usr/local/lib] ==> [/usr/local/lib]
-  collapse framework dir [/Library/Frameworks/] ==> [/Library/Frameworks]
-  collapse framework dir [/System/Library/Frameworks/] ==> [/System/Library/Frameworks]
-  implicit libs: [c++]
-  implicit dirs: [/usr/lib;/usr/local/lib]
-  implicit fwks: [/Library/Frameworks;/System/Library/Frameworks]
+    arg [cmTC_3d07f] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu/Scrt1.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu/crti.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/6/crtbeginS.o] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/6] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/6]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/6/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/6/../../../../lib]
+    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+    arg [-L/lib/../lib] ==> dir [/lib/../lib]
+    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/6/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/6/../../..]
+    arg [CMakeFiles/cmTC_3d07f.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/6/crtendS.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu/crtn.o] ==> ignore
+  remove lib [gcc_s]
+  remove lib [gcc]
+  remove lib [gcc_s]
+  remove lib [gcc]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/6] ==> [/usr/lib/gcc/x86_64-linux-gnu/6]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/6/../../../../lib] ==> [/usr/lib]
+  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+  collapse library dir [/lib/../lib] ==> [/lib]
+  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/6/../../..] ==> [/usr/lib]
+  implicit libs: [stdc++;m;c]
+  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/6;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+  implicit fwks: []
 
 
 
 
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
-Change Dir: /Users/chris/Merge-Sort/build/CMakeFiles/CMakeTmp
+Change Dir: /home/chris/Documents/Merge-Sort/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_8ed54/fast"
-/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_8ed54.dir/build.make CMakeFiles/cmTC_8ed54.dir/build
-Building CXX object CMakeFiles/cmTC_8ed54.dir/feature_tests.cxx.o
-/Library/Developer/CommandLineTools/usr/bin/c++     -std=c++14 -o CMakeFiles/cmTC_8ed54.dir/feature_tests.cxx.o -c /Users/chris/Merge-Sort/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_8ed54
-/usr/local/lib/python2.7/site-packages/cmake/data/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8ed54.dir/link.txt --verbose=1
-/Library/Developer/CommandLineTools/usr/bin/c++     -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_8ed54.dir/feature_tests.cxx.o  -o cmTC_8ed54 
+Run Build Command:"/usr/bin/make" "cmTC_81c62/fast"
+/usr/bin/make -f CMakeFiles/cmTC_81c62.dir/build.make CMakeFiles/cmTC_81c62.dir/build
+make[1]: Entering directory '/home/chris/Documents/Merge-Sort/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_81c62.dir/feature_tests.cxx.o
+/usr/bin/c++     -std=c++14 -o CMakeFiles/cmTC_81c62.dir/feature_tests.cxx.o -c /home/chris/Documents/Merge-Sort/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_81c62
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_81c62.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTC_81c62.dir/feature_tests.cxx.o  -o cmTC_81c62 
+make[1]: Leaving directory '/home/chris/Documents/Merge-Sort/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -316,15 +413,17 @@ Linking CXX executable cmTC_8ed54
 
 
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
-Change Dir: /Users/chris/Merge-Sort/build/CMakeFiles/CMakeTmp
+Change Dir: /home/chris/Documents/Merge-Sort/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_060e1/fast"
-/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_060e1.dir/build.make CMakeFiles/cmTC_060e1.dir/build
-Building CXX object CMakeFiles/cmTC_060e1.dir/feature_tests.cxx.o
-/Library/Developer/CommandLineTools/usr/bin/c++     -std=c++11 -o CMakeFiles/cmTC_060e1.dir/feature_tests.cxx.o -c /Users/chris/Merge-Sort/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_060e1
-/usr/local/lib/python2.7/site-packages/cmake/data/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTC_060e1.dir/link.txt --verbose=1
-/Library/Developer/CommandLineTools/usr/bin/c++     -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_060e1.dir/feature_tests.cxx.o  -o cmTC_060e1 
+Run Build Command:"/usr/bin/make" "cmTC_87a06/fast"
+/usr/bin/make -f CMakeFiles/cmTC_87a06.dir/build.make CMakeFiles/cmTC_87a06.dir/build
+make[1]: Entering directory '/home/chris/Documents/Merge-Sort/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_87a06.dir/feature_tests.cxx.o
+/usr/bin/c++     -std=c++11 -o CMakeFiles/cmTC_87a06.dir/feature_tests.cxx.o -c /home/chris/Documents/Merge-Sort/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_87a06
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_87a06.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTC_87a06.dir/feature_tests.cxx.o  -o cmTC_87a06 
+make[1]: Leaving directory '/home/chris/Documents/Merge-Sort/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -387,15 +486,17 @@ Linking CXX executable cmTC_060e1
 
 
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
-Change Dir: /Users/chris/Merge-Sort/build/CMakeFiles/CMakeTmp
+Change Dir: /home/chris/Documents/Merge-Sort/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_5e9d7/fast"
-/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_5e9d7.dir/build.make CMakeFiles/cmTC_5e9d7.dir/build
-Building CXX object CMakeFiles/cmTC_5e9d7.dir/feature_tests.cxx.o
-/Library/Developer/CommandLineTools/usr/bin/c++     -std=c++98 -o CMakeFiles/cmTC_5e9d7.dir/feature_tests.cxx.o -c /Users/chris/Merge-Sort/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_5e9d7
-/usr/local/lib/python2.7/site-packages/cmake/data/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5e9d7.dir/link.txt --verbose=1
-/Library/Developer/CommandLineTools/usr/bin/c++     -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_5e9d7.dir/feature_tests.cxx.o  -o cmTC_5e9d7 
+Run Build Command:"/usr/bin/make" "cmTC_20795/fast"
+/usr/bin/make -f CMakeFiles/cmTC_20795.dir/build.make CMakeFiles/cmTC_20795.dir/build
+make[1]: Entering directory '/home/chris/Documents/Merge-Sort/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_20795.dir/feature_tests.cxx.o
+/usr/bin/c++     -std=c++98 -o CMakeFiles/cmTC_20795.dir/feature_tests.cxx.o -c /home/chris/Documents/Merge-Sort/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_20795
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_20795.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTC_20795.dir/feature_tests.cxx.o  -o cmTC_20795 
+make[1]: Leaving directory '/home/chris/Documents/Merge-Sort/build/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -456,40 +557,30 @@ Linking CXX executable cmTC_5e9d7
     Feature record: CXX_FEATURE:0cxx_variadic_macros
     Feature record: CXX_FEATURE:0cxx_variadic_templates
 Determining if the include file pthread.h exists passed with the following output:
-Change Dir: /Users/chris/Merge-Sort/build/CMakeFiles/CMakeTmp
+Change Dir: /home/chris/Documents/Merge-Sort/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_843c3/fast"
-/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_843c3.dir/build.make CMakeFiles/cmTC_843c3.dir/build
-Building C object CMakeFiles/cmTC_843c3.dir/CheckIncludeFile.c.o
-/Library/Developer/CommandLineTools/usr/bin/cc     -o CMakeFiles/cmTC_843c3.dir/CheckIncludeFile.c.o   -c /Users/chris/Merge-Sort/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-Linking C executable cmTC_843c3
-/usr/local/lib/python2.7/site-packages/cmake/data/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTC_843c3.dir/link.txt --verbose=1
-/Library/Developer/CommandLineTools/usr/bin/cc    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_843c3.dir/CheckIncludeFile.c.o  -o cmTC_843c3  
+Run Build Command:"/usr/bin/make" "cmTC_5afa3/fast"
+/usr/bin/make -f CMakeFiles/cmTC_5afa3.dir/build.make CMakeFiles/cmTC_5afa3.dir/build
+make[1]: Entering directory '/home/chris/Documents/Merge-Sort/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5afa3.dir/CheckIncludeFile.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_5afa3.dir/CheckIncludeFile.c.o   -c /home/chris/Documents/Merge-Sort/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_5afa3
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5afa3.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_5afa3.dir/CheckIncludeFile.c.o  -o cmTC_5afa3 -rdynamic 
+make[1]: Leaving directory '/home/chris/Documents/Merge-Sort/build/CMakeFiles/CMakeTmp'
 
 
-Determining if the pthread_create exist passed with the following output:
-Change Dir: /Users/chris/Merge-Sort/build/CMakeFiles/CMakeTmp
+Determining if the function pthread_create exists in the pthread passed with the following output:
+Change Dir: /home/chris/Documents/Merge-Sort/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_2294a/fast"
-/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_2294a.dir/build.make CMakeFiles/cmTC_2294a.dir/build
-Building C object CMakeFiles/cmTC_2294a.dir/CheckSymbolExists.c.o
-/Library/Developer/CommandLineTools/usr/bin/cc     -o CMakeFiles/cmTC_2294a.dir/CheckSymbolExists.c.o   -c /Users/chris/Merge-Sort/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_2294a
-/usr/local/lib/python2.7/site-packages/cmake/data/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2294a.dir/link.txt --verbose=1
-/Library/Developer/CommandLineTools/usr/bin/cc    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_2294a.dir/CheckSymbolExists.c.o  -o cmTC_2294a  
+Run Build Command:"/usr/bin/make" "cmTC_4579d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_4579d.dir/build.make CMakeFiles/cmTC_4579d.dir/build
+make[1]: Entering directory '/home/chris/Documents/Merge-Sort/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4579d.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_4579d.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_4579d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4579d.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_4579d.dir/CheckFunctionExists.c.o  -o cmTC_4579d -rdynamic -lpthread 
+make[1]: Leaving directory '/home/chris/Documents/Merge-Sort/build/CMakeFiles/CMakeTmp'
 
-File /Users/chris/Merge-Sort/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
-/* */
-#include <pthread.h>
-
-int main(int argc, char** argv)
-{
-  (void)argv;
-#ifndef pthread_create
-  return ((int*)(&pthread_create))[argc];
-#else
-  (void)argc;
-  return 0;
-#endif
-}
 
